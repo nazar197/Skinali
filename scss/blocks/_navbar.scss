@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 8rem;
   } 
   &__mobile, &__landline{
     text-align: right;
@@ -17,10 +16,10 @@
   &__phone-number {
     display: block;
     font-size: 1.9rem;
-    @include bold;
     text-decoration: none;
     color: $text-color;
     margin-bottom: .5rem;
+    @include bold;
   }
   &__small-text{
     display: block;
@@ -29,7 +28,6 @@
     text-decoration: none;
   }
 }
-
 .menu{
   position: fixed;
   z-index: 0;
@@ -38,9 +36,14 @@
   left: 0;
   padding: 1.6rem 0;
   background-color: $primary;
-  transform: translateY(-100%);
+  z-index: 3;
+  // transform: translateY(0);
+  transform: translateY(-200%);
+  opacity: 0;
   &_active{
+    // transform: translateY(100%);
     transform: translateY(0%);
+    opacity: 1;
   }
   &__nav{
     display: flex;
@@ -87,3 +90,25 @@
     color: $text-color-light;
   }
 }
+@media (max-width: 991px){
+  .navbar{
+    &__mobile, &__landline{
+      display: none;
+    }
+  }
+  .logo{
+    display: none;
+  } 
+  .menu{
+    top: 6rem;
+    &-button{
+      height: 6rem;
+    }
+    &__nav{
+      flex-direction: column;
+    }
+    &__link{
+      margin-bottom: 2rem;
+    }
+  }
+} 

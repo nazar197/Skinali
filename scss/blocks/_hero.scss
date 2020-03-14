@@ -1,16 +1,71 @@
-.hero{
-    background: #f1f1f1 url('../img/hero/hero-bg.jpg') no-repeat center top 8rem;
-    background-size: contain;
-    padding-top: 18rem;
-    padding-bottom: 27rem;
-    &__title{
-        font-size: 3rem;
-        margin-bottom: 4rem;
+@mixin changeHeroOpacity($opacity-lvl) {
+  height: 71.6rem;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8rem;
+    width: 100%;
+    height: inherit;
+    background-color: #fff;
+    z-index: 1;
+    animation: opacity-change 1s forwards;
+    @keyframes opacity-change {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: $opacity-lvl;
+      }
     }
-    &__subtitle{
-        display: block;
-        margin-bottom: 6.7rem;
-        font-size: 3rem;
-        @include bold;
+  }
+  & .container {
+    position: absolute;
+    padding-left: 5rem;
+    z-index: 2;
+  }
+}
+.hero {
+  background: #f1f1f1 url('../img/hero/hero-bg.jpg') no-repeat center top;
+  background-size: fit;
+  overflow: hidden;
+  padding-top: 12rem;
+  padding-bottom: 27rem;
+  margin-top: 8rem;
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+  &__subtitle {
+    display: block;
+    margin-bottom: 6.7rem;
+    font-size: 3rem;
+    @include bold;
+  }
+}
+@media (min-width: 1201px) and (max-width: 2000px) {
+  .hero {
+    background-size: fit;
+    background-position: top left 65%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hero {
+    background-size: fit;
+    background-position: top left 65%;
+    @include changeHeroOpacity(.3);
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    @include changeHeroOpacity(.75);
+    & .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      width: 100%;
     }
+  }
 }

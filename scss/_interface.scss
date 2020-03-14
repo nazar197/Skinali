@@ -4,6 +4,7 @@ html {
 body {
   @include light;
   color: $text-color;
+  overflow-x: hidden;
 }
 .button-o{
   border: .2rem solid $primary;
@@ -12,6 +13,7 @@ body {
   font-size: 1.2rem;
   text-transform: uppercase;
   @include bold;
+  background-color: #fff;
 }
 .button{
   border: none;
@@ -21,4 +23,9 @@ body {
   background-color: $primary;
   color: #ffffff;
   @include bold;
+}
+@media (max-width: 576px){
+  .button-o{
+    font-size: 1rem;
+  }
 }
