@@ -24,6 +24,42 @@ body {
   color: #ffffff;
   @include bold;
 }
+.bg-secondary{
+  background: $bg-secondary;
+}
+.input{
+  height: 8rem;
+  padding-left: 3rem;
+  border: .1rem solid #dddddd;
+}
+input[type="checkbox"]{
+  display: none;
+  &:checked + label:before{
+    content: '';
+    background-color: $primary;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: .4rem solid #fff;
+    border-style: double;
+  }
+}
+.checkbox{
+  &-label{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+    &:hover{
+      cursor: pointer;
+    }
+    &:before{
+      content: '';
+      width: 3rem;
+      height: 3rem;
+      border: .1rem solid #dddddd;
+      margin-right: 2rem;
+    }
+  }
+}
 @media (max-width: 576px){
   .button-o{
     font-size: 1rem;

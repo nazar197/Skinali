@@ -6,8 +6,7 @@
     top: 8rem;
     width: 100%;
     height: inherit;
-    background-color: #fff;
-    z-index: 1;
+    background-image: linear-gradient( rgb(255, 255, 255) , rgba(255, 255, 255, 0.781), transparent);
     animation: opacity-change 1s forwards;
     @keyframes opacity-change {
       0% {
@@ -21,7 +20,7 @@
   & .container {
     position: absolute;
     padding-left: 5rem;
-    z-index: 2;
+    z-index: 1;
   }
 }
 .hero {
@@ -57,7 +56,7 @@
 }
 @media (max-width: 768px) {
   .hero {
-    @include changeHeroOpacity(.75);
+    @include changeHeroOpacity(.6);
     & .container {
       display: flex;
       flex-direction: column;
