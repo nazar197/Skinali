@@ -3,20 +3,24 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     &__image {
       width: 7rem;
       height: 7rem;
     }
+
     &__item {
       flex-basis: 33%;
       text-align: center;
       margin-bottom: 10rem;
     }
+
     &__text {
       font-size: 1.7rem;
     }
   }
 }
+
 @media (max-width: 991px) {
   .features {
     &-block {
@@ -26,6 +30,7 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .features {
     &-block {

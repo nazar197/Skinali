@@ -1,23 +1,27 @@
 * {
   box-sizing: border-box;
 }
+
 .container {
   max-width: 117rem;
   margin: 0 auto;
 }
-@media (max-width: 1199px){
-  .container{
+
+@media (max-width: 1199px) {
+  .container {
     max-width: 960px;
   }
-} 
-@media (max-width: 991px){
-  .container{
+}
+
+@media (max-width: 991px) {
+  .container {
     max-width: 750px;
   }
-} 
-@media (max-width: 768px){
-  .container{
+}
+
+@media (max-width: 768px) {
+  .container {
     max-width: 100%;
     padding: 0 2rem;
   }
-} 
+}
