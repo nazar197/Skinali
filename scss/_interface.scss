@@ -6,6 +6,18 @@ body {
   color: $text-color;
   overflow-x: hidden;
 }
+.section{
+  padding: 10rem 0;
+  &-title{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    @include bold;
+  }
+  &__title{
+    margin-bottom: 10rem;
+  }
+}
 .button-o{
   border: .2rem solid $primary;
   color: $primary;
@@ -63,5 +75,11 @@ input[type="checkbox"]{
 @media (max-width: 576px){
   .button-o{
     font-size: 1rem;
+  }
+  .section{
+    padding: 6rem 0;
+    &-title{
+      font-size: 2.4rem;
+    }
   }
 }
