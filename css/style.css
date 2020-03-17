@@ -39,14 +39,19 @@ body {
   margin-bottom: 10rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 .button-o {
   border: 0.2rem solid #507fe1;
   color: #507fe1;
   padding: 1.7rem 2.2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-decoration: none;
   background-color: #fff;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .button {
@@ -56,7 +61,38 @@ body {
   padding: 2.5rem 4.5rem;
   background-color: #507fe1;
   color: #ffffff;
+  text-decoration: none;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button-fitting {
+  color: #507fe1;
+  background-color: #fff;
+}
+
+.button-add {
+  color: #fff;
+  background-color: #7c9fe8;
+}
+
+.button-like {
+  background: #507fe1;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.button-like img {
+  width: 1.1rem;
+  height: 1.1rem;
 }
 
 .bg-secondary {
@@ -581,6 +617,91 @@ input[type="checkbox"]:checked + label:before {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 5rem;
+  }
+}
+
+.catalog {
+  background-color: #f5f6f8;
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-item {
+  max-width: 57rem;
+  position: relative;
+  -webkit-box-shadow: 0.7rem 0.5rem 2.1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0.7rem 0.5rem 2.1rem rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog-item__button {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  border: none;
+  height: 3rem;
+}
+
+.catalog-item__tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+
+.catalog-item__image {
+  display: block;
+}
+
+.catalog__item {
+  margin-bottom: 3rem;
+}
+
+.catalog__link {
+  text-align: center;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.catalog__link-more {
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+.catalog__description {
+  display: block;
+  margin-top: 4rem;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-item {
+    max-width: 470px;
   }
 }
 /*# sourceMappingURL=style.css.map */
