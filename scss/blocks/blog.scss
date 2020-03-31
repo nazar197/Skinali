@@ -56,3 +56,13 @@
     }
   }
 }
+
+@media (max-width: 1199px) {
+  .blog {
+    &-list {
+      &__image {
+        height: 16rem;
+      }
+    }
+  }
+}

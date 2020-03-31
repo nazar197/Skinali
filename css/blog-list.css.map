@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACG,AAAD,cAAU,CAAC;EACT,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa;CAC/B;;AACA,AAAD,YAAQ,CAAC;EACP,SAAS,EAAE,MAAM;EACjB,GAAG;CACJ",
-    "sources": [
-        "../scss/blocks/blog-list.scss"
-    ],
-    "names": [],
-    "file": "blog-list.css"
-}
