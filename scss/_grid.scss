@@ -22,7 +22,6 @@
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
-    padding: 0 2rem;
   }
 }
 
@@ -31,15 +30,18 @@
     max-width: 100%;
     padding: 0;
   }
-  .offer-block{
+
+  .offer-block {
     padding: .5rem;
   }
-  .form__button{
+
+  .form__button {
     margin-bottom: .5rem;
   }
-  .blog{
-    &-list{
-      &__item{
+
+  .blog {
+    &-list {
+      &__item {
         margin: 0;
         margin-bottom: 1rem;
         width: 90%;

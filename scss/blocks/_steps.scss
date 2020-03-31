@@ -1,0 +1,28 @@
+.step {
+  position: relative;
+  text-align: center;
+  font-size: 1.6rem;
+  &__title{
+    font-size: 1.8rem;
+    
+  }
+  &__text{
+    max-width: 16rem;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+  &s{
+    background-color: #f1f1f1;
+    &-block{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .step{
+    width: 50%;
+  }
+}

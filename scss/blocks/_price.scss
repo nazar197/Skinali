@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .price {
     &-block {
       justify-content: space-around;
@@ -77,6 +77,7 @@
         margin: 2rem;
       }
     }
+
     &__card {
       margin: 2rem;
     }
