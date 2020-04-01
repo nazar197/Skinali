@@ -6,6 +6,7 @@ body {
   @include light;
   color: $text-color;
   overflow-x: hidden;
+  font-size: 1.6rem;
 }
 
 .section {

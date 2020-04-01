@@ -1,0 +1,82 @@
+.footer {
+  padding: 4rem 0;
+  background-color: #262626;
+  color: #fff;
+
+  &-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    @include bold;
+    margin-top: 0;
+  }
+
+  &__subtitle {
+    display: block;
+    margin-bottom: 4rem;
+  }
+
+  &__copy {
+    color: #767676;
+  }
+
+  &__pay-info {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  &__pay-system {
+    margin: 1.5rem;
+  }
+
+  &__contacts {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    @include bold;
+  }
+
+  &__mail {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &-social__link img {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    &-block {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__contacts {
+      margin-top: 3rem;
+      text-align: center;
+    }
+  }
+}
