@@ -1,0 +1,32 @@
+.about {
+  &-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__image {
+      margin: 2rem 0;
+    }
+
+    &__text {
+      text-align: justify;
+      hyphens: auto;
+      margin-left: 7rem;
+      flex-basis: 50%;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .about {
+    &-block {
+      flex-direction: column;
+
+      &__text {
+        margin-left: 0;
+      }
+    }
+  }
+}
