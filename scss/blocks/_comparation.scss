@@ -3,15 +3,14 @@
   &-slider{
     &-wrap{
       max-width: 1344px;
-      margin: auto;
       position: relative;
     }
-    &-arrows{
+    &__arrows{
       position: absolute;
       display: flex;
       justify-content: space-between;
       top: 50%;
-      // z-index: -1;
+      z-index: 1;
       width: 100%;
       transform: translateY(-50%);
     }
@@ -55,7 +54,10 @@
   //   transform: translateX(200%);
   // }
 }
-@media (min-width: 1025px) {
+
+
+
+@media (min-width: 1200px) {
   .arrow{
     &-left{
       transform: translateX(-200%);
@@ -64,4 +66,16 @@
       transform: translateX(200%);
     }
   }
+}
+
+@media (max-width: 1199px) {
+  .comparation{ 
+    &-slider{
+      &__dots{
+        position: absolute;
+        margin-top: -3rem;
+      }
+    }
+  }
+  
 }
