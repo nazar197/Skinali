@@ -3,16 +3,21 @@
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 100;
   background-color: #fff;
+  border-bottom: .1rem solid rgba(#510bba, 0.1);
+
   &-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  } 
-  &__mobile, &__landline{
+  }
+
+  &__mobile,
+  &__landline {
     text-align: right;
   }
+
   &__phone-number {
     display: block;
     font-size: 1.9rem;
@@ -21,14 +26,16 @@
     margin-bottom: .5rem;
     @include bold;
   }
-  &__small-text{
+
+  &__small-text {
     display: block;
     font-size: 1.4rem;
     color: $text-color-light;
     text-decoration: none;
   }
 }
-.menu{
+
+.menu {
   position: fixed;
   z-index: 0;
   width: 100%;
@@ -37,26 +44,28 @@
   padding: 1.6rem 0;
   background-color: $primary;
   z-index: 3;
-  // transform: translateY(0);
   transform: translateY(-200%);
   opacity: 0;
-  &_active{
-    // transform: translateY(100%);
+
+  &_active {
     transform: translateY(0%);
     opacity: 1;
   }
-  &__nav{
+
+  &__nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-  &__link{
+
+  &__link {
     text-decoration: none;
     font-size: 1.7rem;
     text-transform: uppercase;
     color: #ffffff;
   }
-  &-button{
+
+  &-button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +76,16 @@
     border-left: .1rem solid rgba(#510bba, 0.1);
     height: 8rem;
     width: 7rem;
-    &__line{
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &__line {
       width: 2rem;
       height: .3rem;
       background-color: #89a9eb;
@@ -77,38 +95,51 @@
 }
 
 .logo {
-  &__text{
+  &__text {
     display: block;
     margin-bottom: .5rem;
     font-size: 1.8rem;
     text-transform: uppercase;
     @include bold;
   }
-  &__description{
+
+  &__description {
     display: block;
     font-size: 1.4rem;
     color: $text-color-light;
   }
 }
-@media (max-width: 991px){
-  .navbar{
-    &__mobile, &__landline{
+
+@media (max-width: 991px) {
+  .navbar {
+
+    &__mobile,
+    &__landline {
       display: none;
     }
+
+    &__button {
+      margin-right: .5rem;
+    }
   }
-  .logo{
+
+  .logo {
     display: none;
-  } 
-  .menu{
+  }
+
+  .menu {
     top: 6rem;
-    &-button{
+
+    &-button {
       height: 6rem;
     }
-    &__nav{
+
+    &__nav {
       flex-direction: column;
     }
-    &__link{
+
+    &__link:not(:last-child) {
       margin-bottom: 2rem;
     }
   }
-} 
+}

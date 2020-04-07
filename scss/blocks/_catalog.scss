@@ -10,12 +10,23 @@
     max-width: 57rem;
     position: relative;
     box-shadow: .7rem .5rem 2.1rem rgba(0, 0, 0, .1);
+    overflow-y: hidden;
+
+    &:hover {
+      .catalog-item__buttons {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
 
     &__buttons {
       position: absolute;
+      display: flex;
       bottom: 0;
       right: 0;
-      display: flex;
+      transition: 0.2s;
+      opacity: 0;
+      transform: translateY(100%);
     }
 
     &__button {
@@ -61,7 +72,6 @@
     display: block;
     margin-top: 4rem;
   }
-
 }
 
 @media (max-width: 1199px) {

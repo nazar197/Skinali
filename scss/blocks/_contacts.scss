@@ -2,11 +2,13 @@
   padding-bottom: 0;
   &-block{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     &__item{
       margin: 0 auto;
       text-align: center;
+      width: 15rem;
     }
   }
   &__image{
@@ -38,10 +40,6 @@
         width: 100%;
         margin-bottom: 7rem;
       }
-    }
-    &__address{
-      max-width: 15rem;
-      margin: auto;
     }
   }
 }

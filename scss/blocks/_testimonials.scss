@@ -42,3 +42,16 @@
     }
   }
 }
+
+@media (max-width: 1300px) {
+  .testimonials {
+    &-slider {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}

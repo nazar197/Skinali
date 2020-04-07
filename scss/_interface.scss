@@ -116,6 +116,59 @@ input[type="checkbox"] {
   }
 }
 
+.select {
+  height: 8rem;
+  border: .1rem solid #dddddd;
+  width: 100%;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background: url('../img/offer/caret.png') no-repeat center;
+    background-size: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &_checked {
+    line-height: 8rem;
+    padding-left: 3rem;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 8rem;
+    width: 100%;
+    background-color: #fff;
+    border: .1rem solid #dddddd;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: none;
+
+    &_open {
+      display: block;
+    }
+  }
+
+  &__option {
+    padding: 2rem;
+
+    &:hover {
+      background-color: $bg-secondary;
+    }
+  }
+}
+
 .checkbox {
   &-label {
     display: flex;
@@ -137,8 +190,9 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 576px) {
-  .button{ 
+  .button {
     font-size: 1rem;
+
     &-o {
       font-size: 1rem;
     }

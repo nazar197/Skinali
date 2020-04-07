@@ -18,12 +18,12 @@
       <div class="container">
         <nav class="menu__nav">
           <a href="#" class="menu__link">Головна</a>
-          <a href="#" class="menu__link">Продукція</a>
-          <a href="#" class="menu__link">Каталог</a>
-          <a href="#" class="menu__link">Приклади робіт</a>
-          <a href="#" class="menu__link">Примірка зображень</a>
-          <a href="#" class="menu__link">Вартість дилерам</a>
-          <a href="#" class="menu__link">Про скіналі</a>
+          <a href="#features" class="menu__link">Наші переваги</a>
+          <a href="#catalog" class="menu__link">Каталог</a>
+          <a href="#price" class="menu__link">Розцінки</a>
+          <a href="#steps" class="menu__link">Етапи Робіт</a>
+          <a href="#comparation" class="menu__link">Примірка зображень</a>
+          <a href="#about" class="menu__link">Про нас</a>
         </nav>
       </div>
       <!-- /.container -->
@@ -50,7 +50,7 @@
             <a class="navbar__phone-number" href="tel:+380931234567">+38 032 123-45-67</a>
             <a class="navbar__email navbar__small-text" href="mailto:info@ukr.net">info@ukr.net</a>
           </div>
-          <button class="button-o navbar__button">Проконсультуватись</button>
+          <a href="#offer" class="button-o navbar__button">Проконсультуватись</a>
         </div>
         <!-- /.navbar-wrap -->
       </div>
@@ -61,14 +61,14 @@
       <div class="container">
         <h1 class="hero__title">Гарантія <br />мінімальної ціни <br />на скіналі</h1>
         <span class="hero__subtitle">від 1500 грн/м<sup>2</sup></span>
-        <button class="button hero__button">Замовити скіналі</button>
+        <a href="#offer" class="button hero__button">Замовити скіналі</a>
       </div>
     </div>
     <!-- /.hero -->
   </header>
   <!-- /.header -->
   <main>
-    <section class="offer bg-secondary">
+    <section class="offer bg-secondary" id="offer">
       <div class="container">
         <div class="offer__block offer-block offer-block_calc-bg">
           <h2 class="offer__title">Залиште заявку на розрахунок</h2>
@@ -76,16 +76,23 @@
           <form action="#" class="form offer__form">
             <div class="form__row">
               <div class="form__group">
-                <label for="" class="form__label">Вид скла</label>
-                <input type="text" class="input form__input">
+                <label for="select-type" class="form__label">Вид скла</label>
+                <input type="hidden" name="type" id="select-type" value="З друком" class="form__select">
+                <div class="select form__select">
+                  <div class="select_checked">З друком</div>
+                  <ul class="select__dropdown">
+                    <li class="select__option" data-value="З друком">З друком</li>
+                    <li class="select__option" data-value="Без друку">Без друку</li>
+                  </ul>
+                </div>
               </div>
               <div class="form__group">
-                <label for="" class="form__label">Ширина, см</label>
-                <input type="text" class="input form__input">
+                <label for="width__input" class="form__label">Ширина, см</label>
+                <input type="text" class="input form__input" id="width__input">
               </div>
               <div class="form__group">
-                <label for="" class="form__label">Висота, см</label>
-                <input type="text" class="input form__input">
+                <label for="hight__input" class="form__label">Висота, см</label>
+                <input type="text" class="input form__input" id="hight__input">
               </div>
             </div>
             <!-- /.form__row -->
@@ -124,7 +131,7 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
-    <section class="features section">
+    <section class="features section" id="features">
       <div class="container">
         <h2 class="section-title section__title">Наші переваги</h2>
         <div class="features-block">
@@ -164,7 +171,7 @@
       <!-- /.container -->
     </section>
     <!-- /.features section -->
-    <section class="section catalog bg-secondary">
+    <section class="section catalog bg-secondary" id="catalog">
       <div class="container">
         <h2 class="section-title section__title">Каталог скіналі</h2>
         <div class="catalog-block">
@@ -333,7 +340,7 @@
     </section>
     <!-- /.section blog -->
 
-    <section class="section price">
+    <section class="section price" id="price">
       <div class="container">
         <h2 class="section-title section__title">Ціни і види скіналі</h2>
         <!-- /.section-title section__title -->
@@ -497,7 +504,7 @@
     </section>
     <!-- /.section price -->
 
-    <section class="section steps bg-secondary">
+    <section class="section steps bg-secondary" id="steps">
       <div class="container">
         <h2 class="section-title section__title">Етапи роботи</h2>
         <!-- /.section-title section__title -->
@@ -545,7 +552,7 @@
     </section>
     <!-- /.section steps -->
 
-    <section class="section comparation">
+    <section class="section comparation" id="comparation">
       <div class="container">
         <h2 class="section-title section__title">До і після</h2>
 
@@ -638,14 +645,14 @@
       <div class="container">
         <div class="offer__block offer-block offer-block_price-bg">
           <h2 class="offer__title">Шукаєте де дешевше і краще?</h2>
-          <span class="offer__subtitle">Якщо у Вас вже є розрахунок від іншої фірми, але Ви хочете ціну дешевше, вкажіть її - і ми перерахуємо вам замовлення з максимальною знижкою!</span>
+          <span class="offer__subtitle">Якщо у вас вже є розрахунок від іншої фірми, але ви хочете ціну дешевше, вкажіть її - і ми перерахуємо вам замовлення з максимальною знижкою!</span>
           <form action="#" class="form offer__form">
             <div class="form__row">
               <div class="form__group">
                 <input type="text" class="input form__input" placeholder="Ваше ім'я">
               </div>
               <div class="form__group">
-                <input type="text" class="input form__input" placeholder="Ваш телефон">
+                <input type="tel" class="input form__input" placeholder="Ваш телефон">
               </div>
               <div class="form__group">
                 <input type="text" class="input form__input" placeholder="Ваша ціна">
@@ -669,10 +676,10 @@
       <!-- /.container -->
     </section>
 
-    <section class="section about">
+    <section class="section about" id="about">
       <div class="container">
         <h2 class="section-title section__title">
-          Про виробництво
+          Чому ви повинні обрати нас?
         </h2>
         <div class="about-block">
           <div class="about-block__image">
@@ -690,7 +697,7 @@
 
     <section class="section contacts bg-secondary">
       <div class="container">
-        <h2 class="section-title section__title"></h2>
+        <h2 class="section-title section__title">Контакти</h2>
         <div class="contacts-block">
           <div class="contacts-block__item">
             <img src="img/contacts/phone.svg" alt="phone" class="contacts__image">
@@ -768,8 +775,9 @@
   <!-- /.footer -->
 
   <!-- add social network feedback widget - Spikmi-->
-  <script type="text/javascript" src="https:///spikmi.com/Widget?Id=2936"></script>
+  <script src="https://spikmi.com/Widget?Id=2936"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/libs/jquery.maskedinput.min.js"></script>
   <script src="js/libs/jquery.event.move.js"></script>
   <script src="js/libs/jquery.twentytwenty.js"></script>
   <script src="js/libs/slick.min.js"></script>
